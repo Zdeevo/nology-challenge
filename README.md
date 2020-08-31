@@ -1,2 +1,2 @@
-# nology-challenge2
+# nology-challenge
 HTML &amp; CSS challenge
