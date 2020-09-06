@@ -1,23 +1,34 @@
 body{
   font-family: 'Changa';
-  max-width: 1200px;
-  display: table;
   margin: auto;
   background-color: #bbd0e6;
   background-size: 150%;
   background-attachment: scroll;
+  min-width: 500px;
 }
 
+main {
+  margin-left: 170px;
+  max-width: 1000px;
+
+}
+
+main a {
+  scroll-margin-top: 170px;
+  overflow: auto;
+}
 
 .header-panel {
-  background-color:#dfa145ec;
+  opacity: 0.95;
+  background-image: 
+  linear-gradient(to right, rgb(255, 235, 59), rgba(36, 181, 145, 0) ), 
+  url('code.jpg');
+  background-color:rgba(223, 161, 67, 0.925);
   margin: auto;
   padding: 0px;
   margin: 0px 0px 0px 0px;
   border: 1px solid darkslateblue;
-  max-width: 1200px;
-  width: auto;
-  position: -webkit-sticky;
+  width: 100%;
   position: sticky;
   top: 0px;
 }
@@ -35,11 +46,17 @@ body{
 
 .header-panel h1{
   color: #e8492a;
-  text-shadow: 1px 1px 2px red, 0 0 1em rgb(235, 144, 92), 0 0 0.2em blue;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(235, 144, 92), 0 0 0.2em rgb(0, 0, 255);
   line-height: 60px;
   font-size: 60px;
   font-weight: normal;
   margin:5px 5px 5px 50px;
+  transition: 0.5s;
+}
+
+.header-panel h1:hover {
+  font-size: 70px;
+  text-shadow: 2px 2px 3px red, 0 0 1em rgb(235, 144, 92), 0 0 0.5em rgb(0, 0, 255);
 }
 
 .header-panel h3{
@@ -59,7 +76,7 @@ body{
   position: fixed;
   z-index: 1;
   top: 152px;
-  background-color: #ffeb3b;
+  background-color: rgb(255, 235, 59);
   overflow-x: hidden;
   padding-top: 20px;
   border-right: 1px solid darkslateblue;
@@ -68,7 +85,7 @@ body{
 }
 
 
-.sidenav a {
+.sidenav a{
   padding: 3px;
   margin: auto;
   text-decoration: none;
@@ -77,27 +94,35 @@ body{
   color: #e8492a;
   display: block;
   background-color: #dfa145;
-  border: 3px solid darkslateblue;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.548);
   border-radius: 3px;
   padding: 5px 5px;
   text-align: center;
   width: 65%;
+  transition: color 0.5s;
   
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+  border: 1px solid orangered;
 }
 
-.main {
-  margin-left: 170px;
-  max-width: 1000px;
-
-}
-
-.main a {
-  scroll-margin-top: 170px;
-  overflow: auto;
+.sidenav p{
+  padding: 3px;
+  margin: auto;
+  text-decoration: none;
+  line-height: 15px;
+  font-size: 20px;
+  color: #e8492a;
+  display: block;
+  background-color: #dfa145;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.548);
+  border-radius: 3px;
+  padding: 5px 5px;
+  text-align: center;
+  width: 65%;
+  transition: color 0.5s;
 }
 
 
@@ -209,6 +234,10 @@ img {
 .contact h3 {
   font-size: 28px;
   text-shadow: 3px 3px rgba(211, 211, 211, 0.75);
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 #contact {
